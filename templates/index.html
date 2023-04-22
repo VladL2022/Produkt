@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WB</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+<div class="wrapper">
+    <form action="" method="post">
+
+    <div class="imgcontainer">
+        <img src="logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container_log">
+
+        <label class="logtext" for="uname" ><b>Логин</b></label>
+        <input type="text" placeholder="Введите логин" name="uname" required>
+        <label class="logpass" for="psw" ><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+        <label class="psw"><a href="#">Забыли пароль?</a></label>
+    </div>
+
+    <div class="container_inp">
+        <button type="submit">Войти</button>
+
+        <div class="rem_me">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+            </label>
+        </div>
+
+
+    </div>
+    </form>
+</div>
+</body>
+</html>
